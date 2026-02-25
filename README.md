@@ -1,5 +1,7 @@
 # swifties
 
+## html-table-to-json
+
 Simple CLI utilities written in [Swift](https://www.swift.org).
 
 ```
@@ -11,7 +13,7 @@ swift build -c release
 
 Read `HTML` markup containing one `<table>` from `stdin`, write data in `JSON` format to `stdout`. Object keys are read from `<th>` elements.
 
-Built on top of [SwiftSoup](https://github.com/scinfu/SwiftSoup)
+Built on top of [SwiftSoup](https://github.com/scinfu/SwiftSoup).
 
 ## json-reverse
 
@@ -24,3 +26,4 @@ Minify `JSON` read from `stdin`.
 ## json-pretty
 
 Pretty-print `JSON` read from `stdin`.
+
