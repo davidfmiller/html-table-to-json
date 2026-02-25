@@ -6,7 +6,6 @@ for dir in */; do
     NAME=`basename $dir`
     cd "$dir" || exit
     echo "👧🏼 $NAME"
-    # run commands here
     swift build -c release
     cp .build/release/$NAME ~/bin
   )

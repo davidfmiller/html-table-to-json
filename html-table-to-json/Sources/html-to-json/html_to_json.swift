@@ -4,14 +4,14 @@ import SwiftSoup
 
 struct HTMLError: Error, CustomStringConvertible {
   let message: String
-  
+
   var description: String {
     return self.message
   }
 }
 
 func htmlTableToJSON(html: String) throws -> String {
-  
+
     let doc: Document = try SwiftSoup.parse(html)
     let nodes = try doc.getElementsByTag("table")
     if nodes.size() == 0 {
@@ -21,15 +21,15 @@ func htmlTableToJSON(html: String) throws -> String {
     let table = try doc.getElementsByTag("table")[0]
 
     let headers: [String] = try table.select("th").map { try $0.text() }
-    
+
     let rows = try table.select("tbody tr")
-    
+
     var jsonArray: [[String: String]] = []
-    
+
     for row in rows {
         let cells = try row.select("td")
         var rowObject: [String: String] = [:]
-        
+
         for (index, cell) in cells.enumerated() {
             if index < headers.count {
                 // Use header as the key and cell text as the value
