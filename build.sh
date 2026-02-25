@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# ensure ~/bin exists
+mkdir -p ~/bin
+
 # build all swifties & copy build artifact to ~/bin
 
 for dir in */; do
