@@ -26,7 +26,6 @@ func htmlTableToJSON(html: String) throws -> String {
   for row in rows {
     let cells = try row.select("td")
     var rowObject: [String: String] = [:]
-
     for (index, cell) in cells.enumerated() {
       if index < headers.count {
         rowObject[headers[index]] = try cell.text()
@@ -45,7 +44,6 @@ struct html_to_json {
   static func main() {
     let data = FileHandle.standardInput.readDataToEndOfFile()
     let result = String(decoding: data, as: UTF8.self)
-
     do {
       let jsonOutput = try htmlTableToJSON(html: result)
       print(jsonOutput)

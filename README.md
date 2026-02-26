@@ -9,8 +9,7 @@ Capitalize the first letter of each word read from `stdin`.
 Simple CLI utilities written in [Swift](https://www.swift.org).
 
 ```
-swift build && swift run
-swift build -c release
+./build.sh
 ```
 
 ## html-strip-attrs

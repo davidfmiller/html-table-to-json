@@ -6,7 +6,9 @@ extension String {
   /**
    */
   var sanitized : String {
-    return self.capitalized
+    return self
+      .replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
+      //.replacingOccurrences(of: "\\n+", with: "\n", options: .regularExpression)
   }
 }
 

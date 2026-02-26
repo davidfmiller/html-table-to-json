@@ -1,4 +1,3 @@
-
 import Foundation
 
 extension String {
@@ -6,14 +5,13 @@ extension String {
   /**
    */
   var sanitized : String {
-    return self.capitalized
+    return self.replacingOccurrences(of: "[\n\r]+", with: " ", options: .regularExpression)
   }
 }
 
 @main
-struct capitalize {
+struct single_line {
     static func main() {
-
       if CommandLine.arguments.count > 1 {
         let arguments = Array(CommandLine.arguments[1 ..< CommandLine.arguments.count])
         for arg in arguments
