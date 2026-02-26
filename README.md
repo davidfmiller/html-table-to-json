@@ -1,16 +1,14 @@
 # swifties
 
-## capitalize
-
-Capitalize the first letter of each word read from `stdin`.
-
-## html-table-to-json
-
 Simple CLI utilities written in [Swift](https://www.swift.org).
 
 ```
 ./build.sh
 ```
+
+## capitalize
+
+Capitalize the first letter of each word read from `stdin`.
 
 ## html-strip-attrs
 
