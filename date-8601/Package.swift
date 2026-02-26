@@ -3,10 +3,10 @@
 import PackageDescription
 
 let package = Package(
-  name: "iso8601",
+  name: "date-8601",
   targets: [
     .executableTarget(
-        name: "iso8601"
+        name: "date-8601"
     ),
   ]
 )

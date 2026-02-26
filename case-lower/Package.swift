@@ -1,12 +1,13 @@
 // swift-tools-version: 6.2
 
+
 import PackageDescription
 
 let package = Package(
-    name: "uppercase",
+    name: "case-lower",
     targets: [
         .executableTarget(
-            name: "uppercase"
+            name: "case-lower"
         ),
     ]
 )

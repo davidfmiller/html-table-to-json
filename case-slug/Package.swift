@@ -3,10 +3,10 @@
 import PackageDescription
 
 let package = Package(
-  name: "slugify",
+  name: "case-slug",
   targets: [
     .executableTarget(
-      name: "slugify"
+      name: "case-slug"
     ),
   ]
 )

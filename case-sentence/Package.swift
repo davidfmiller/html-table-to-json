@@ -4,10 +4,10 @@
 import PackageDescription
 
 let package = Package(
-    name: "capitalize",
+    name: "case-sentence",
     targets: [
         .executableTarget(
-            name: "capitalize"
+            name: "case-sentence"
         ),
     ]
 )

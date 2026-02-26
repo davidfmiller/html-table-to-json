@@ -11,7 +11,7 @@ extension String {
 }
 
 @main
-struct capitalize {
+struct case_sentence {
     static func main() {
 
       if CommandLine.arguments.count > 1 {

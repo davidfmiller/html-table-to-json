@@ -1,16 +1,36 @@
 # swifties
 
-## capitalize
-
-Capitalize the first letter of each word read from `stdin`.
-
-## html-table-to-json
-
 Simple CLI utilities written in [Swift](https://www.swift.org).
 
 ```
 ./build.sh
 ```
+
+## case-lower
+
+Lower-case `stdin` or command-line arguments.
+
+
+## case-sentence
+
+Capitalize the first letter of each word read from `stdin`.
+
+## case-slug
+
+`abc-def-ghi`.
+
+## case-upper
+
+Upper-case `stdin` or command-line arguments.
+
+## date-8601
+
+Print current date in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format
+
+## date-ymd
+
+Date in `YYYY-MM-DD`, optional first argument as separator
+
 
 ## html-strip-attrs
 
@@ -24,10 +44,6 @@ Read `HTML` markup containing one `<table>` from `stdin`, write data in `JSON` f
 
 Built on top of [SwiftSoup](https://github.com/scinfu/SwiftSoup).
 
-## iso8601
-
-Print current date in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format
-
 ## json-min
 
 Minify `JSON` read from `stdin`.
@@ -40,14 +56,7 @@ Pretty-print `JSON` read from `stdin`.
 
 Reverse a `JSON` array read from `stdin`.
 
-## lowercase
+## single-line
 
-Lower-case `stdin` or command-line arguments. 
+## whitespace-collapse
 
-## slugify
-
-`abc-def-ghi`.
-
-## uppercase 
-
-Upper-case `stdin` or command-line arguments.
