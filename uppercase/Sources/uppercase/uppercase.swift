@@ -1,4 +1,3 @@
-
 import Foundation
 
 extension String {
@@ -10,6 +9,7 @@ extension String {
       .uppercased()
   }
 }
+
 
 @main
 struct uppercase {
