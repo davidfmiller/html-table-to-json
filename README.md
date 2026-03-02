@@ -33,7 +33,6 @@ Read CSV from `stdin`, print JSON to `stdout`.
 
 Built on top of [SwiftCSV](https://github.com/swiftcsv/SwiftCSV).
 
-
 ## date-8601
 
 Print current date in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format
@@ -52,6 +51,12 @@ Built on top of [SwiftSoup](https://github.com/scinfu/SwiftSoup).
 ## html-table-to-json
 
 Read `HTML` markup containing one `<table>` from `stdin`, write data in `JSON` format to `stdout`. Object keys are read from `<th>` elements.
+
+Built on top of [SwiftSoup](https://github.com/scinfu/SwiftSoup).
+
+## html-tidy
+
+Reflow `HTML` markup to be nicely formatted.
 
 Built on top of [SwiftSoup](https://github.com/scinfu/SwiftSoup).
 
