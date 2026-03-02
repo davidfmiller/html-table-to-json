@@ -42,6 +42,22 @@ func htmlTableToJSON(html: String) throws -> String {
 struct html_to_json {
 
   static func main() {
+
+    let args = CommandLine.arguments.dropFirst()
+    if args.count > 0 {
+      for arg in args {
+        do {
+          let contents = try String(contentsOfFile: arg, encoding: .utf8)
+          let stripped = try htmlTableToJSON(html: contents)
+          print(stripped)
+        } catch {
+          FileHandle.standardError.write(Data("❗️ \(error)".utf8))
+          exit(1)
+        }
+      }
+      exit(0)
+    }
+
     let data = FileHandle.standardInput.readDataToEndOfFile()
     let result = String(decoding: data, as: UTF8.self)
     do {
