@@ -15,7 +15,7 @@ func csvToJSON(string: String) throws -> String {
 
   let csv = try CSV<Named>(string: string.trimmingCharacters(in: .newlines))
   let json = try JSONEncoder().encode(csv.rows)
-    
+
   guard let str = String(data: json, encoding: .utf8) else {
     throw CSVError(message: "Unable to parse CSV")
   }
@@ -37,7 +37,7 @@ struct csv_to_json {
           let json = try csvToJSON(string: contents)
           print(json)
         } catch {
-          FileHandle.standardError.write(Data("Error reading file: \(error)".utf8))
+          FileHandle.standardError.write(Data("❗️ \(error)".utf8))
           exit(1)
         }
       }
@@ -50,7 +50,7 @@ struct csv_to_json {
       let json = try csvToJSON(string: stdin)
       print(json)
     } catch {
-      FileHandle.standardError.write("❗️ \(error)".data(using: .utf8)!)
+      FileHandle.standardError.write(Data("❗️ \(error)".utf8))
       exit(1)
     }
   }
