@@ -41,6 +41,10 @@ Print current date in [ISO8601](https://www.iso.org/iso-8601-date-and-time-forma
 
 Date in `YYYY-MM-DD`, optional first argument as separator
 
+### exif
+
+Print JSON-formatted EXIF data for arguments.
+
 ### html-strip-attrs
 
 Read `HTML` markup from `stdin`, remove all attributes from elements and print to `stdout`.
