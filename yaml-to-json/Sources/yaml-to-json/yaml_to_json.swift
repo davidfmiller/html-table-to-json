@@ -5,7 +5,11 @@ import Yams
 
 func yamlData(yamlString: String) -> Data? {
   do {
-    let yaml = try Yams.load(yaml: yamlString)
+    guard
+      let yaml = try Yams.load(yaml: yamlString)
+    else {
+      return nil
+    }
     let jsonData = try JSONSerialization.data(
       withJSONObject: yaml,
       options: [.prettyPrinted]
@@ -42,7 +46,6 @@ struct yaml_to_json {
         x(error.localizedDescription)
         exit(1)
       }
-      // read stdin
       exit(0)
     }
     let inputData = FileHandle.standardInput.readDataToEndOfFile()
