@@ -75,6 +75,10 @@ Pretty-print `JSON` read from `stdin`.
 
 Reverse a `JSON` array read from `stdin`.
 
+### markdown
+
+Read `markdown` from `stdin`, convert to HTML & write to `stdout`.
+
 ### single-line
 
 ### whitespace-collapse
