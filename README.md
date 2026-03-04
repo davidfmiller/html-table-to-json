@@ -23,10 +23,6 @@ Capitalize the first letter of each sentence read from `stdin`.
 
 `abc-def-ghi`.
 
-### case-upper
-
-Upper-case `stdin` or command-line arguments.
-
 ### csv-to-json
 
 Read CSV from `stdin`, print JSON to `stdout`.
