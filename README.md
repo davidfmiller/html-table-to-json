@@ -104,6 +104,8 @@ Convert [YAML](https://yaml.org) to JSON.
 
 ## TODO
 
+* `json-min` arguments
+* `json-pretty` arguments
 * date-ymd: option to read date from `stdin`
 * string-trim
 * [json-path](https://jmespath.org/?)
