@@ -3,8 +3,9 @@
 Simple CLI utilities written in [Swift](https://www.swift.org).
 
 ```
-./clean.sh #
-./build.sh # build and copy artifacts to ~/bin
+./clean.sh  #
+./build.sh  #
+./deploy.sh # copy artifacts to ~/bin
 ```
 
 ### case-capitalize
