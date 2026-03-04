@@ -1,6 +1,8 @@
 #!/bin/sh
 
-# build all swifties
+# copy all swifties build artifacts to ~/bin
+
+mkdir -p ~/bin # ensure ~/bin exists
 
 for dir in */; do
   [ -d "$dir" ] || continue
@@ -8,6 +10,6 @@ for dir in */; do
     NAME=`basename $dir`
     cd "$dir" || exit
     echo "👧🏼 $NAME"
-    swift build -q -c release # 1> /dev/null
+    cp .build/release/$NAME ~/bin
   )
 done

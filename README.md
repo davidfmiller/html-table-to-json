@@ -3,8 +3,9 @@
 Simple CLI utilities written in [Swift](https://www.swift.org).
 
 ```
-./clean.sh #
-./build.sh # build and copy artifacts to ~/bin
+./clean.sh  #
+./build.sh  #
+./deploy.sh # copy artifacts to ~/bin
 ```
 
 ### case-capitalize
@@ -85,7 +86,19 @@ Read `markdown` from `stdin`, convert to HTML & write to `stdout`.
 
 ### single-line
 
+TODO.
+
 ### whitespace-collapse
+
+TODO.
+
+### toml-to-json
+
+Convert [TOML](https://toml.io/) to JSON.
+
+### yaml-to-json
+
+Convert [YAML](https://yaml.org) to JSON.
 
 ---
 
@@ -93,3 +106,5 @@ Read `markdown` from `stdin`, convert to HTML & write to `stdout`.
 
 * date-ymd: option to read date from `stdin`
 * string-trim
+* [json-path](https://jmespath.org/?)
+* html-select
