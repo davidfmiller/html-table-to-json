@@ -1,4 +1,4 @@
-# swifties
+# 👧🏼 swifties
 
 Simple CLI utilities written in [Swift](https://www.swift.org).
 
